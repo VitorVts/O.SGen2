@@ -18,12 +18,11 @@
                     <option value="reparo">Reparo</option>
                 </select>
             </div>
-
+            
             <div class="form-fields" id="reparoFields">
                 <div class="form-grid">
                     <div class="form-group">
-                        <label for="praca">PRAÇA:</label>
-                        <input type="text" id="praca" name="praca" required>
+                        <?php include 'listar_campos_os.php'?>
                     </div>
                 </div>
             </div>
