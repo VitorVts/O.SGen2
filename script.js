@@ -1,4 +1,3 @@
-
 function showLoading() {
     document.querySelector('.loading').classList.add('active');
     document.querySelector('.container').classList.add('loading-active');
@@ -18,7 +17,6 @@ function carregarTiposServico() {
     showLoading();
     fetch('http://localhost/Github/O.SGen2/listar_tipo_servico.php')
         .then(function(respostaServidor) {
-            console.log('Resposta recebida do servidor:', respostaServidor);
             return respostaServidor.json();
         })
         .then(function(tipos) {
@@ -26,7 +24,6 @@ function carregarTiposServico() {
             const select = document.getElementById('tipo');
             
             if (!tipos || tipos.length === 0) {
-                console.log('Nenhum tipo de serviço encontrado');
                 return;
             }
             
@@ -35,7 +32,6 @@ function carregarTiposServico() {
             }
             
             tipos.forEach(tipo => {
-                console.log('Adicionando tipo:', tipo);
                 const option = document.createElement('option');
                 option.value = tipo.id;
                 option.textContent = tipo.nome;
@@ -119,4 +115,45 @@ function criaCampos(result) {
     
     const formGroup = document.querySelector('.form-group')
     formGroup.appendChild(form);
+}
+
+function copiarOS() {
+    const form = document.querySelector('form');
+    if (!form) return;
+
+    let osFormatada = '';
+    const inputs = form.querySelectorAll('input, textarea, select');
+    
+    inputs.forEach(input => {
+        const label = input.previousElementSibling;
+        if (label && label.tagName === 'LABEL') {
+            const labelText = label.textContent.replace(':', '').trim();
+            let value = input.value.trim();
+            
+            if (input.type === 'date' && value) {
+                const [ano, mes, dia] = value.split('-');
+                value = `${dia}/${mes}/${ano}`;
+            }
+            
+            if (value) {
+                osFormatada += `${labelText}:${value}\n`;
+            }
+        }
+        
+    });
+
+    osFormatada = osFormatada.trim().toUpperCase();
+
+    const textarea = document.getElementById('osFormatada');
+    textarea.value = osFormatada;
+    textarea.select();
+    navigator.clipboard.writeText(osFormatada);
+    
+
+    const btn = document.querySelector('.submit-btn');
+    const originalText = btn.textContent;
+    btn.textContent = 'OS Copiada!';
+    setTimeout(() => {
+        btn.textContent = originalText;
+    }, 5000);
 } 

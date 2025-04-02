@@ -12,7 +12,7 @@
         <div class="loading-spinner"></div>
     </div>
     <div class="container">
-        <h1>Nova Ordem de Serviço</h1>
+        <h1>Criar Nova Ordem de Serviço</h1>
         <div action="index.php" method="GET">
             <div class="form-group">
                 <label for="tipo">Tipo de Ordem de Serviço:</label>
@@ -29,9 +29,12 @@
                 </div>
             </div>
 
-            <button type="submit" class="submit-btn">Criar Nova OS</button>
+            <button type="button" class="submit-btn" onclick="copiarOS()">Criar Nova OS</button>
         </div>
     </div>
+
+    <!-- Elemento oculto para armazenar o texto formatado -->
+    <textarea id="osFormatada" style="position: absolute; left: -9999px;"></textarea>
 
     <script src="script.js"></script>
 </body>
