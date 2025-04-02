@@ -8,46 +8,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
     <div class="container">
         <h1>Nova Ordem de Serviço</h1>
-        <form action="index.php" method="GET">
+        <div action="index.php" method="GET">
             <div class="form-group">
                 <label for="tipo">Tipo de Ordem de Serviço:</label>
                 <select id="tipo" name="tipo" required onchange="atualizarFormulario()">
                     <option value="">Selecione o tipo...</option>
-                    <option value="reparo">Reparo</option>
                 </select>
             </div>
             
             <div class="form-fields" id="reparoFields">
                 <div class="form-grid">
                     <div class="form-group">
-                        <?php include 'listar_campos_os.php'?>
+                        
                     </div>
                 </div>
             </div>
 
             <button type="submit" class="submit-btn">Criar Nova OS</button>
-        </form>
+        </div>
     </div>
 
-    <script>
-        function atualizarFormulario() {
-            const tipo = document.getElementById('tipo').value;
-            const reparoFields = document.getElementById('reparoFields');
-            const interfoneFields = document.getElementById('interfoneFields');
-            
-            if (tipo === 'reparo') {
-                reparoFields.classList.add('active');
-                interfoneFields.classList.remove('active');
-            } else if (tipo === 'interfone') {
-                reparoFields.classList.remove('active');
-                interfoneFields.classList.add('active');
-            } else {
-                reparoFields.classList.remove('active');
-                interfoneFields.classList.remove('active');
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html> 
