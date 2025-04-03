@@ -74,8 +74,13 @@ Para criar as tabelas automaticamente, siga os passos abaixo:
    - `create_tb_campos_os.sql`  
 
 2️⃣ Insira os tipos de serviços executando o script:  
-   - `insert_os_type.sql`  
-
+   - `insert_os_type.sql`,por exemplo:
+```sql
+INSERT INTO tb_tipo_de_servico (tipo_servico_id,name) VALUES 
+(1,'Reparo'),
+(2,'Mud.Local de ponto'),
+(3,'Mud.Enderelo')
+```
 3️⃣ Insira os campos das OSs de acordo com o `tipo_servico_id`, por exemplo:  
 
 ```sql
