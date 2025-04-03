@@ -1,0 +1,15 @@
+INSERT INTO tb_campos_os (label, tipo_servico_id, type, tag) VALUES 
+('PRAÇA', 2, 'text', 'input'),
+('DATA DO AGENDAMENTO', 2, 'date', 'input'),
+('PERÍODO', 2, 'text', 'input'),
+('CTO', 2, 'text', 'input'),
+('PORTA', 2, 'text', 'input'),
+('SSID', 2, 'text', 'input'),
+('SENHA', 2, 'text', 'input'),
+('CLIENTE CIENTE DA POSSÍVEL TAXA', 2, 'text', 'input'),
+('( ) COBRANÇA NA FATURA 1 DIAS', 2, 'text', 'input'),
+('PONTOS DE REFERÊNCIA', 2, 'text', 'textarea'),
+('CONTATOS DO CLIENTE', 2, 'text', 'input'),
+('CONTATOS(2) DO CLIENTE', 2, 'text', 'input'),
+('DESEJA OU NÃO ANTECIPAR', 2, 'text', 'input'),
+('OBS', 2, 'text', 'input');

@@ -1,0 +1,15 @@
+INSERT INTO tb_campos_os (label,tipo_servico_id,type,tag) VALUES
+('PRAÇA',1,'text','input'),
+('PROBLEMA ALEGADO',1,'text','textarea'),
+('DATA DO AGENDAMENTO',1,'date','input'),
+('PERÍODO',1,'text','input'),
+('VERIFICADO ALARME DO U200',1,'text','input'),
+('SINAL ÓTICO:',1,'text','input'),
+('CTO',1,'text','input'),
+('PORTA',1,'text','input'),
+('SSID',1,'text','input'),
+('SENHA',1,'text','input'),
+('PONTOS DE REFERÊNCIA',1,'text','input'),
+('CONTATO DO CLIENTE',1,'text','input'),
+('CONTATO(2) DO CLIENTE',1,'text','input'),
+('OBS',1,'text','input')
