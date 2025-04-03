@@ -48,7 +48,7 @@ erDiagram
         tag varchar(255)
     }
 
-    tb_tipo_de_servico ||--o{ tb_campos_os : contém
+    tb_tipo_de_servico ||--o{ tb_campos_os : possui
 ```
 
 ---
