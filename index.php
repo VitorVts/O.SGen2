@@ -33,7 +33,6 @@
         </div>
     </div>
 
-    <!-- Elemento oculto para armazenar o texto formatado -->
     <textarea id="osFormatada" style="position: absolute; left: -9999px;"></textarea>
 
     <script src="script.js"></script>

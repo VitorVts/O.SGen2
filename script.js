@@ -23,7 +23,7 @@ function carregarTiposServico() {
             console.log('Tipos de serviço recebidos:', tipos);
             const select = document.getElementById('tipo');
             
-            if (!tipos || tipos.length === 0) {
+                if (!tipos || tipos.length === 0) {
                 return;
             }
             

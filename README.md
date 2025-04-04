@@ -79,7 +79,7 @@ Para criar as tabelas automaticamente, siga os passos abaixo:
 INSERT INTO tb_tipo_de_servico (tipo_servico_id,name) VALUES 
 (1,'Reparo'),
 (2,'Mud.Local de ponto'),
-(3,'Mud.Enderelo')
+(3,'Mud.Endereço')
 ```
 3️⃣ Insira os campos das OSs de acordo com o `tipo_servico_id`, por exemplo:  
 
