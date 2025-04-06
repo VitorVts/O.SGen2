@@ -20,14 +20,6 @@
                     <option value="">Selecione o tipo...</option>
                 </select>
             </div>
-            
-            <div class="form-fields" id="reparoFields">
-                <div class="form-grid">
-                    <div class="form-group">
-                        
-                    </div>
-                </div>
-            </div>
 
             <button type="button" class="submit-btn" onclick="copiarOS()">Criar Nova OS</button>
         </div>

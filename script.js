@@ -51,14 +51,11 @@ function atualizarFormulario() {
     limpaCampos();
     getTipo(tipo);
     const reparoFields = document.getElementById('reparoFields');
-    const interfoneFields = document.getElementById('interfoneFields');
     
     if (tipo === '1') {
         reparoFields.classList.add('active');
-        interfoneFields.classList.remove('active');
     } else {
         reparoFields.classList.remove('active');
-        interfoneFields.classList.remove('active');
     }
 }
 
