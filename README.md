@@ -49,7 +49,6 @@ erDiagram
     }
 
     tb_tipo_campos {
-        id int PK "NOT NULL"
         tipo_servico_id int FK "NOT NULL"
         campos_os_id int FK "NOT NULL"
     }
