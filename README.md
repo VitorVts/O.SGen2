@@ -177,17 +177,17 @@ try {
 <div style="display: flex; gap: 30px; justify-content: center; align-items: flex-start; margin-bottom: 2rem;">
 
   <div style="text-align: center; width: 30%;">
-    <img src="docs/img/tela-inicial.png" alt="Tela Inicial" style="width: 100%; border-radius: 8px;" />
+    <img src="docs/img/tela-inicial.png" alt="Tela Inicial" style="width: 30%; border-radius: 8px;" />
     <p>🖥️ <strong>Tela Inicial</strong></p>
   </div>
 
   <div style="text-align: center; width: 30%;">
-    <img src="docs/img/selecao-servico.png" alt="Seleção de Serviço" style="width: 100%; border-radius: 8px;" />
+    <img src="docs/img/selecao-servico.png" alt="Seleção de Serviço" style="width: 30%; border-radius: 8px;" />
     <p>🛠️ <strong>Seleção de Serviço</strong></p>
   </div>
 
   <div style="text-align: center; width: 30%;">
-    <img src="docs/img/resultado-os.png" alt="Resultado da Ordem de Serviço" style="width: 100%; border-radius: 8px;" />
+    <img src="docs/img/resultado-os.png" alt="Resultado da Ordem de Serviço" style="width: 30%; border-radius: 8px;" />
     <p>📋 <strong>Resultado da Ordem de Serviço</strong></p>
   </div>
 
