@@ -172,16 +172,13 @@ try {
 
 ---
 
-## 🖼️ Preview do Sistema
+<h2>🖼️ Preview do Sistema</h2>
 
-### 🖥️ Tela Inicial  
-![Tela Inicial](docs/img/tela-inicial.png)
-
-### 🛠️ Seleção de Serviço  
-![Seleção de Serviço](docs/img/selecao-servico.png)
-
-### 📋 Resultado da Ordem de Serviço  
-![Resultado da OS](docs/img/resultado-os.png)
+<div style="display: flex; gap: 10px; justify-content: center;">
+  <img src="docs/img/tela-inicial.png" alt="Tela Inicial" width="30%" />
+  <img src="docs/img/selecao-servico.png" alt="Seleção de Serviço" width="30%" />
+  <img src="docs/img/resultado-os.png" alt="Resultado da OS" width="30%" />
+</div>
 
 ---
 
