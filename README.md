@@ -171,3 +171,17 @@ try {
 7️⃣ **Clique no botão para copiar os dados da OS para a área de transferência.** 🎯  
 
 ---
+
+## 🖼️ Preview do Sistema
+
+### 🖥️ Tela Inicial  
+![Tela Inicial](docs/img/tela-inicial.png)
+
+### 🛠️ Seleção de Serviço  
+![Seleção de Serviço](docs/img/selecao-servico.png)
+
+### 📋 Resultado da Ordem de Serviço  
+![Resultado da OS](docs/img/resultado-os.png)
+
+---
+
